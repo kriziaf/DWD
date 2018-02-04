@@ -3,7 +3,7 @@ var http = require('http');
 var fs = require('fs'); // Using the filesystem module
 var httpServer = http.createServer(requestHandler);
 var url = require('url');
-httpServer.listen(80);
+httpServer.listen(8000);
 
 function requestHandler(req, res) {
 
