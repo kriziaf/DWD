@@ -5,12 +5,17 @@ $(function() {
 	//listen for add button click
 	$('#add').click(addTask);
 
-
+		function responseFromServer(a){
+			console.log(a);
+		}
 		function addTask(e){
 			e.preventDefault();
 
 			//get content in the field
 			var entry = $('#entry').val();
+
+			// here we want to sedn the todo item to the webserver
+			$.get("/formpostval="+entry, responseFromServer);
 
 			//make new list item with the content
 			entry = '<li>'+ entry + '</li>';
@@ -25,7 +30,7 @@ $(function() {
 			//add 1 to task, then display
 			task ++;
 			$('#num').text(task);
-			
+
 			//clear the field
 			$('#entry').val("");
 
@@ -33,22 +38,22 @@ $(function() {
 
 			//complete task
 			$('body').on('click', '#lineEntry li', function(){
-    			
+
     			/*alert($(this).text());*/
     			$(this).toggleClass("done");
 
-    			//update status	
+    			//update status
     			if ($(this).hasClass('done')) {
     				task --;
 
     			} else {
 	    			task ++;
 	    			$('#num').text(task);
-    			}	
- 				
+    			}
+
  			});
 
-			
+
 			//
 
 

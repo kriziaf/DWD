@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <body>
+        <h1>My Todo Page</h1>
+        <% if (person) {  %>
+                <h2><%= person.name %><h2>
+                <h3><%= person.other %></h3>
+        <% } %>
+</body>
+</html> -->
+
+<html>
+  <head>
+    <meta name="description" content="Todo application" />
+    <link rel="stylesheet" href="css/normalize.css" >
+    <link rel="stylesheet" href="css/styles.css" >
+    <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Todo App</title>
+  </head>
+  <body>
+
+    <div id="container">
+        <div id="list">
+
+          <h2>checklist</h2>
+            <!-- <% for (var i=0;i<LineEntry.length;i++){ %> -->
+
+              <input id="entry" type="text" name="task" placeholder="write your to-do"/>
+
+              <button id="add">&#43;</button>
+
+              <!-- <form method="GET" action="/formpost"> -->
+                        <ul id="lineEntry"></ul>
+                        <!-- append new item -->
+              <!-- </form> -->
+            <!-- <% } %> -->
+
+          <!-- feedback -->
+          <p>You have <span id='num'> 0 </span> thing/s left to do.</p>
+
+        </div>
+    </div>
+
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

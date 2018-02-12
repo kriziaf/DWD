@@ -10,15 +10,24 @@ app.get('/', function (req, res) {
 })
 
 var count = 0;
-
 var submissions = [];
 
-app.get('/somethingelse', function (req, res) {
-	count++;
-  res.send('<html><body><h1>Something Else' + count + '</h1></body></html>')
+//define a route named somethingelse
+//GET REQUEST
+app.get('/formpost', function (req, res) {
+  console.log("THIS HAS BEEN ADDED BY SOME TO DO LISTER: ", req.query.val);
+  let userinput = req.query.val;
+  // here you probably want to put this into mongoDB
+  res.send("You submitted: " + userinput);
+	submissions.push(req.query.textfield);
+	// count++;
+  // res.send('<html><body><h1>BLBLA Something Else' + count + '</h1></body></html>')
 })
 
-app.get('/formpost', function (req, res) {
+//define route as action=formpost
+//GET REQUEST
+//submissions
+app.get('/formresult', function (req, res) {
 	console.log("They submitted: " + req.query.textfield);
 	res.send("You submitted: " + req.query.textfield);
 	submissions.push(req.query.textfield);
