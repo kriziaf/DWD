@@ -17,12 +17,13 @@
         <div id="list">
 
           <h2>checklist</h2>
-
+              <form action="/formpost" method="get">
               <input id="entry" type="text" name="task" placeholder="write your to-do"/>
 
-              <button id="add">&#43;</button>
+              <input type="submit" value="add" />
 
               <ul id="lineEntry"></ul>
+              </form>
 
           <!-- feedback -->
           <p>You have <span id='num'> 0 </span> thing/s left to do.</p>

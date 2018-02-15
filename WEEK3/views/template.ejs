@@ -1,13 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- <body>
-        <h1>My Todo Page</h1>
-        <% if (person) {  %>
-                <h2><%= person.name %><h2>
-                <h3><%= person.other %></h3>
-        <% } %>
-</body>
-</html> -->
 
 <html>
   <head>
@@ -27,19 +19,18 @@
         <div id="list">
 
           <h2>checklist</h2>
-            <!-- <% for (var i=0;i<LineEntry.length;i++){ %> -->
 
               <input id="entry" type="text" name="task" placeholder="write your to-do"/>
 
               <button id="add">&#43;</button>
 
-              <!-- <form method="GET" action="/formpost"> -->
-                        <ul id="lineEntry"></ul>
-                        <!-- append new item -->
-              <!-- </form> -->
-            <!-- <% } %> -->
+                        <ul id="lineEntry">
+                          <% for (var i=0;i<data.length;i++){ %>
+                            <li><%=data[i]%></li>
+                          <% } %>
 
-          <!-- feedback -->
+                        </ul>
+
           <p>You have <span id='num'> 0 </span> thing/s left to do.</p>
 
         </div>
