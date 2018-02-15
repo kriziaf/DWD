@@ -57,7 +57,6 @@ db.mycollection.save({"list":answer}, function(err, saved) {
   if( err || !saved ) console.log("Not saved");
   else console.log("Saved");
 });
-
   // app.get('/display', function(req, res) {
   // //*****mongo.find()
 app.listen(3000, function () {
