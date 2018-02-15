@@ -46,15 +46,14 @@ app.get('/formpost', function (req, res) {
   //ejs template
 app.get('/display',function(req,res){
   // var answer = {submissions: {lineEntry:"data"}};
-  var answer = [ {lineEntry:req.query.task}];
-  //{lineEntry:"brezl"}, {lineEntry:"jim"}
-  res.render('template.ejs',{"data": answer});
+  var answer = [list: {lineEntry:req.query.task}];
+  res.render('template.ejs',answer);
 });
   //{"text":"req.query.textfield"}
   //****mongo.save
   //app.post('/display')
 
-db.mycollection.save({"attribute_to_save":"value_to_save"}, function(err, saved) {
+db.mycollection.save({"list":answer}, function(err, saved) {
   if( err || !saved ) console.log("Not saved");
   else console.log("Saved");
 });
