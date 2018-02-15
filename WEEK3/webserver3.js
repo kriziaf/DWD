@@ -5,8 +5,13 @@ var config = require("./config.js");
 var mongojs = require("mongojs");
 //****define the mongo DB
 //mongojs("username:password@example.com:port/mydb", ["submissions"]);
-var db = mongojs("mongodb://subuser:subpass@ds229878.mlab.com:29878/test_krizia", ["submissions"]);
+var db = mongojs("mongodb://config.username+":"+config.password+@ds229878.mlab.com:29878/test_krizia", ["submissions"]);
 
+var bodyParser = require('body-parser');
+var urlencodedParser = bodyParser.urlencoded({ extended: true }); // for parsing form data
+app.use(urlencodedParser);
+
+//use express
 var express = require('express')
 var app = express()
 app.use(express.static('public'));
@@ -46,17 +51,17 @@ app.get('/formpost', function (req, res) {
   //ejs template
 app.get('/display',function(req,res){
   // var answer = {submissions: {lineEntry:"data"}};
-  var answer = [list: {lineEntry:req.query.task}];
-  res.render('template.ejs',answer);
+  var answer = [ {lineEntry:req.query.task},{lineEntry:"brezl"},{lineEntry:"jim"}];
+  //
+  res.render('template.ejs',{"data": answer});
 });
-  //{"text":"req.query.textfield"}
-  //****mongo.save
-  //app.post('/display')
 
-db.mycollection.save({"list":answer}, function(err, saved) {
+
+db.mycollection.save({"attribute_to_save":"value_to_save"}, function(err, saved) {
   if( err || !saved ) console.log("Not saved");
   else console.log("Saved");
 });
+
   // app.get('/display', function(req, res) {
   // //*****mongo.find()
 app.listen(3000, function () {

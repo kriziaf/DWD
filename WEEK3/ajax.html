@@ -1,0 +1,21 @@
+
+
+<html>
+  <head>
+    <script type="text/javascript" src="code."></script>
+
+      <script>
+        $.ajax({
+          url: http://api.openweathermap.org/data/2.5/weather?q=New%York&apid=<NEED KEY HERE>,
+          data: {
+            zipcode: 97201
+          },
+          success: function( result ) {
+            $( "#weather-temp" ).html( "<strong>" + result + "</strong> degrees" );
+          }
+        });
+
+      </script>
+
+</head>
+</html>
