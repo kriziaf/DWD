@@ -11,7 +11,7 @@ $("#add").on("click", function(){
 
   // send ajax request with the newTodo item to
   // our server so we can put it into the database
-  $.get("/new?val="+newTodo, function(a){
+  $.get("/new"+newTodo, function(a){
     console.log("worked! ", a);
   })
 
