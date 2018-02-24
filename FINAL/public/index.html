@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Matcha Data</h1>
+    <div id="result"></div>
+
+    <script>
+    $('document').ready(
+      function() {
+        $.ajax({
+          //SERVER LINK GOES HERE 104...
+          url:"http://localhost:3000/twitter",
+          //data:{},
+          success: function(data) {
+          console.log('hi');
+
+          // //DISPLAY STRING
+          //   $('#result').html('<p>' + data + '</p>')
+
+          //PARSE JSON STRING
+            var obj = jQuery.parseJSON(data);
+
+            for (var i=0;i<10;i++){
+                $('#result').append('<p>' + obj[i].text + '</p>');
+                //<i>'+obj[i].entities.hashtags[].text+"</i>")
+                console.log(obj[i].text);
+                // console.log(obj[1].text);
+                // console.log(obj[3].text);
+                for (var x=0;x<obj.length;x++){
+
+                $('#result').append('<i>' + obj[x].entities.hashtags["madeoffood"] + "</i>")
+                //SYNTAX FOR jquery json
+                //myObj.cars["car2"]
+                //myObj.cars.car2
+                //
+                }
+            }
+
+
+          },
+          error: function(err) {
+            console.log(err);
+          }
+        })
+      }
+    )
+
+    </script>
+  </body>
+</html>

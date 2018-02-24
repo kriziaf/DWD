@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+  <head>
+    <meta name="description" content="Todo application" />
+    <link rel="stylesheet" href="css/styles.css" >
+    <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+
+    <!-- <link rel="stylesheet" href="css/normalize.css" > -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Todo App</title>
+  </head>
+  <body>
+
+    <div id="container">
+        <div id="list">
+
+          <h2>checklist</h2>
+
+              <input id="entry" type="text" name="task" placeholder="write your to-do"/>
+              <button id="add">&#43;</button>
+
+              <ul id="lineEntry">
+                <% for (var i=0;i<data.length;i++){ %>
+                  <li><%=data[i].lineEntry%></li>
+                <% } %>
+
+              </ul>
+
+
+          <p>You have <span id='num'> <%=data.length%> </span> thing/s left to do.</p>
+
+        </div>
+    </div>
+
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
