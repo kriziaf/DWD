@@ -40,7 +40,7 @@ const app = express()
 	});
 
   app.get('/twitter', function(req,res) {
-    let data = twitter.getUserTimeline({ screen_name: 'matchadata', count: '10'}, error, function(data){
+    let data = twitter.getUserTimeline({ screen_name: 'matchadata', count: '100'}, error, function(data){
       res.send(data);
     });
 

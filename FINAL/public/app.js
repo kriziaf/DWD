@@ -12,19 +12,44 @@ $('document').ready(
 
       //PARSE JSON STRING
         var obj = jQuery.parseJSON(data);
+          console.log(obj);
+        for (var i=0;i<obj.length;i++){
+          let emoji = printEmojis(obj[i].text);
+          if(emoji != null){
+            let category = obj[i].entities.hashtags[0].text;
+            $('#result').append('<p class="'+category+' tweets">' + obj[i].text + '</p>');
 
+<<<<<<< HEAD
         for (var i=0;i<10;i++){
             $('#result').append('<p>' + obj[i].text + '</p>');
             //let tweet = obj[i].text
             //console.log(tweet);
+=======
+>>>>>>> 14afe5a7991f67bf868995eff713892284f33c17
 
-            let emoji = printEmojis(obj[i].text);
-            $('#emoji').append(emoji);
+            //on click of aTag, filter emojis containing the hashtag
 
+<<<<<<< HEAD
             // console.log(obj[1].text);
             let aTag = $("<a></a>").append('<a>#' + obj[i].entities.hashtags[0].text + "<a>");
             $('#hashtag').append(aTag);
 
+=======
+            let aTag = $('<a>#' + category + '<a>');
+            aTag.click(() => {
+              filterContent(category);
+            })
+            $('#hashtag').append(aTag);
+
+            //console.log(tweet);
+            //hover this emoji, show obj[i].text
+            //else hide!!
+            // let emoji = printEmojis(obj[i].text);
+            $('#emoji').append('<span class="'+category+' emoji">'+emoji.join('')+'</span>');
+          }
+
+
+>>>>>>> 14afe5a7991f67bf868995eff713892284f33c17
         }
 
 
@@ -36,6 +61,7 @@ $('document').ready(
   }
 )
 
+<<<<<<< HEAD
 function showTweet () {
   //$( "#other" ).click(function() {
   //$( "#target" ).click();
@@ -51,6 +77,43 @@ function showTweet () {
 				console.log(nav + 'has been clicked');
 
 				$('#changePic').attr('src','image/xheight.svg');
+=======
+function filterContent(target){
+  $('.emoji').each(function(){
+    console.log(this);
+    console.log($(this).hasClass(target));
+    if(!$(this).hasClass(target)){
+      $(this).hide();
+    }else{
+      $(this).show();
+    }
+  })
+  $('.tweets').each(function(){
+    console.log(this);
+    console.log($(this).hasClass(target));
+    if(!$(this).hasClass(target)){
+      $(this).hide();
+    }else{
+      $(this).show();
+    }
+  })
+
+}
+
+function showTweet () {
+  //$( "#nav" ).click(function() {
+  //$( "#target" ).click();
+  //});
+
+
+
+      var nav= obj[i].entities.hashtags[0].text;
+      var tweet = obj[i].text;
+			$(nav).click(function() {
+
+				console.log(nav + 'has been clicked');
+				$('#result').append(tweet);
+>>>>>>> 14afe5a7991f67bf868995eff713892284f33c17
 
 				hideCopy();
 			});
