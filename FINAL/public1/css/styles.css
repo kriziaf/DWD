@@ -1,14 +1,16 @@
 body {
-	width: 1200px;
+	width: 900px;
 	margin: auto;
-	font-size: 20px;
-	font-family: "Courier New", Courier, monospace;
+	font-size: 26px;
+	font-family: sans-serif;
 }
 
 header {
+
 	background: #eee;
 	border: 1px #ccc solid;
 	width: 800px;
+	height: 100px;
 	margin: 10px;
 
 }
@@ -62,35 +64,24 @@ section {
 	height: 300px;
 	margin: 10px;
 	float: left;
-
 }
 
-section #result {
-	margin: 20px;
-	font-family: "Courier New", Courier, monospace;
-}
-
-
-section #emoji {
-	font-size: 75px;
-	margin: 20px;
-}
 
 aside {
 	display: flex;
   flex-flow: column wrap;
 	background: #eee;
 	border: 1px #ccc solid;
-	width: 250px;
+	width: 200px;
 	/* height: 300px; */
-	float: left;
-	font-size: 40px;
-	margin: 20px;
-	font-family: "Courier New", Courier, monospace;
+	margin: 10px;
+	font-size: 100px;
+
 
 }
 
 footer {
+
 	background: #eee;
 	border: 1px #ccc solid;
 	width: 800px;
@@ -98,5 +89,17 @@ footer {
 	margin: 10px;
 	float: left;
 
+}
+
+/*3 column*/
+
+.right-aside, .left-aside {
+
+	background: #eee;
+	border: 1px #ccc solid;
+	width: 128px;
+	height: 300px;
+	margin: 10px;
+	float: left;
 
 }
