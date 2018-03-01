@@ -2,45 +2,35 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
     <title></title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="app.js"></script>
   </head>
   <body>
-    <h1>Matcha Data</h1>
 
-    <div id="result"></div>
-    <div id="menu"></div>
-    <div id="viz"></div>
+    <header>
+      <h1>Matcha Data</h1>
+  	</header>
+
+    <aside id ="hashtag"></aside>
+
+  	<section>
+  		<div id="emoji">
+        <i class="em em-some-emoji"></i>
+      </div>
+  	</section>
+
+    <section>
+  		<div id="result"></div>
+  	</section>
+
+    <!-- <footer>
+
+    </footer> -->
 
 
   </body>
-    <script>
-    $('document').ready(
-      function() {
-        $.ajax({
-          //SERVER LINK GOES HERE 104...
-          url:"http://localhost:3000/twitter",
-          //data:{},
-          success: function(data) {
-            //console.log('hi');
-            var obj = jQuery.parseJSON(data);
-            // var json = data;
-            // obj = JSON.parse(json);
-            // console.log(obj[0].text);
-            for (var i=0;i<data.length;i++){
-                $('#result').html('<p>' + obj[i].text + '</p>')
-            }
-
-
-
-          },
-          error: function(err) {
-            console.log(err);
-          }
-        })
-      }
-    )
-
-    </script>
-
 </html>
