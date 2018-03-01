@@ -13,10 +13,6 @@ header {
 
 }
 
-body {
-  font-family: 'Open Sans', sans-serif;
-}
-
 h1, h2 {
   font-weight: 800;
   text-transform: uppercase;
@@ -58,8 +54,7 @@ section {
 
 	background: #eee;
 	border: 1px #ccc solid;
-	width: 580px;
-	height: 300px;
+	width: 780px;
 	margin: 10px;
 	float: left;
 
@@ -67,7 +62,6 @@ section {
 
 section #result {
 	margin: 20px;
-	font-family: "Courier New", Courier, monospace;
 }
 
 
@@ -76,18 +70,19 @@ section #emoji {
 	margin: 20px;
 }
 
-aside {
-	display: flex;
-  flex-flow: column wrap;
-	background: #eee;
-	border: 1px #ccc solid;
-	width: 250px;
-	/* height: 300px; */
-	float: left;
+aside #hashtag {
+
 	font-size: 40px;
 	margin: 20px;
-	font-family: "Courier New", Courier, monospace;
 
+}
+
+aside  {
+	border: 1px #ccc solid;
+	/* height: 300px; */
+	display: flex;
+	flex-flow: column wrap;
+	float: left;
 }
 
 footer {
