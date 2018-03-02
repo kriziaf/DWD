@@ -1,12 +1,21 @@
 body {
-	width: 1200px;
+	width: 900px;
 	margin: auto;
-	font-size: 20px;
-	font-family: "Courier New", Courier, monospace;
+	font-size: 26px;
+	font-family: sans-serif;
 }
 
 header {
+<<<<<<< HEAD
 	width: 998px;
+=======
+
+	background: #eee;
+	border: 1px #ccc solid;
+	width: 800px;
+	height: 100px;
+	margin: 10px;
+>>>>>>> parent of bf5a749... up to the cloud
 
 }
 
@@ -54,12 +63,15 @@ section {
 	margin: 10px;
 	float: left;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 }
 
 section #result {
 	margin: 20px;
 	font-family: "Courier New", Courier, monospace;
+=======
+>>>>>>> parent of bf5a749... up to the cloud
 }
 =======
 >>>>>>> 14afe5a7991f67bf868995eff713892284f33c17
@@ -67,18 +79,22 @@ section #result {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 section #emoji {
 	font-size: 75px;
 	margin: 20px;
 }
 
+=======
+>>>>>>> parent of bf5a749... up to the cloud
 aside {
 	display: flex;
   flex-flow: column wrap;
 	background: #eee;
 	border: 1px #ccc solid;
-	width: 250px;
+	width: 200px;
 	/* height: 300px; */
+<<<<<<< HEAD
 	float: left;
 	font-size: 40px;
 	margin: 20px;
@@ -89,6 +105,11 @@ section #result {
 }
 
 >>>>>>> 14afe5a7991f67bf868995eff713892284f33c17
+=======
+	margin: 10px;
+	font-size: 100px;
+
+>>>>>>> parent of bf5a749... up to the cloud
 
 section #emoji {
 	font-size: 75px;
@@ -118,6 +139,7 @@ aside  {
 }
 
 footer {
+
 	background: #eee;
 	border: 1px #ccc solid;
 	width: 800px;
@@ -126,5 +148,17 @@ footer {
 	float: left;
 >>>>>>> 14afe5a7991f67bf868995eff713892284f33c17
 
+}
+
+/*3 column*/
+
+.right-aside, .left-aside {
+
+	background: #eee;
+	border: 1px #ccc solid;
+	width: 128px;
+	height: 300px;
+	margin: 10px;
+	float: left;
 
 }
