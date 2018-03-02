@@ -6,10 +6,7 @@ body {
 }
 
 header {
-	background: #eee;
-	border: 1px #ccc solid;
-	width: 800px;
-	margin: 10px;
+	width: 998px;
 
 }
 
@@ -17,12 +14,11 @@ h1, h2 {
   font-weight: 800;
   text-transform: uppercase;
   border-bottom: 4px solid black;
-  display: inline-block;
 }
 
-h1 {
-  font-size: 32px;
-	margin: 20px;
+h1 a {
+  font-size: 40px;
+	text-decoration: none;
 }
 
 h2 {
@@ -71,15 +67,12 @@ section #emoji {
 }
 
 aside #hashtag {
-
 	font-size: 40px;
 	margin: 20px;
 
 }
 
 aside  {
-	border: 1px #ccc solid;
-	/* height: 300px; */
 	display: flex;
 	flex-flow: column wrap;
 	float: left;
