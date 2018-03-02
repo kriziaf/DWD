@@ -2,7 +2,7 @@ $('document').ready(
   function() {
     $.ajax({
       //SERVER LINK GOES HERE 104...
-      url:"http://104.236.222.190/3000",
+      url:"http://104.236.222.190:3000/twitter",
       //data:{},
       success: function(data) {
 
