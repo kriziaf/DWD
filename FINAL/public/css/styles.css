@@ -7,8 +7,11 @@ body {
 
 header {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	width: 998px;
 =======
+=======
+>>>>>>> parent of bf5a749... up to the cloud
 
 	background: #eee;
 	border: 1px #ccc solid;
@@ -64,12 +67,15 @@ section {
 	float: left;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 }
 
 section #result {
 	margin: 20px;
 	font-family: "Courier New", Courier, monospace;
+=======
+>>>>>>> parent of bf5a749... up to the cloud
 =======
 >>>>>>> parent of bf5a749... up to the cloud
 }
@@ -80,11 +86,14 @@ section #result {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 section #emoji {
 	font-size: 75px;
 	margin: 20px;
 }
 
+=======
+>>>>>>> parent of bf5a749... up to the cloud
 =======
 >>>>>>> parent of bf5a749... up to the cloud
 aside {
@@ -95,6 +104,7 @@ aside {
 	width: 200px;
 	/* height: 300px; */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	float: left;
 	font-size: 40px;
 	margin: 20px;
@@ -103,6 +113,11 @@ aside {
 section #result {
 	margin: 20px;
 }
+=======
+	margin: 10px;
+	font-size: 100px;
+
+>>>>>>> parent of bf5a749... up to the cloud
 
 >>>>>>> 14afe5a7991f67bf868995eff713892284f33c17
 =======
@@ -118,6 +133,7 @@ section #emoji {
 
 <<<<<<< HEAD
 footer {
+
 	background: #eee;
 	border: 1px #ccc solid;
 	width: 800px;
@@ -125,6 +141,7 @@ footer {
 	margin: 10px;
 	float: left;
 
+<<<<<<< HEAD
 =======
 aside #hashtag {
 	font-size: 40px;
@@ -148,6 +165,8 @@ footer {
 	float: left;
 >>>>>>> 14afe5a7991f67bf868995eff713892284f33c17
 
+=======
+>>>>>>> parent of bf5a749... up to the cloud
 }
 
 /*3 column*/

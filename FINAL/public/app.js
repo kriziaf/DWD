@@ -21,11 +21,17 @@ $('document').ready(
 <<<<<<< HEAD
         for (var i=0;i<10;i++){
 <<<<<<< HEAD
+<<<<<<< HEAD
             $('#result').append('<p>' + obj[i].text + '</p>');
             //let tweet = obj[i].text
             //console.log(tweet);
 =======
 >>>>>>> 14afe5a7991f67bf868995eff713892284f33c17
+=======
+           // $('#result').append('<p>' + obj[i].text + '</p>');
+            //<i>'+obj[i].entities.hashtags[].text+"</i>")
+            // console.log(obj[i].text);
+>>>>>>> parent of bf5a749... up to the cloud
 =======
            // $('#result').append('<p>' + obj[i].text + '</p>');
             //<i>'+obj[i].entities.hashtags[].text+"</i>")
@@ -38,6 +44,7 @@ $('document').ready(
             // console.log(obj[1].text);
             let aTag = $("<a></a>").append('<i>' + obj[i].entities.hashtags[0].text + "</i>");
             $('#hashtag').append(aTag);
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
@@ -63,6 +70,13 @@ $('document').ready(
 >>>>>>> parent of bf5a749... up to the cloud
         }
 
+=======
+            //SYNTAX FOR jquery json
+            //myObj.cars["car2"]
+            //myObj.cars.car2
+        }
+
+>>>>>>> parent of bf5a749... up to the cloud
       },
       error: function(err) {
         console.log(err);
@@ -71,6 +85,7 @@ $('document').ready(
   }
 )
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 function showTweet () {
@@ -131,6 +146,8 @@ function showTweet () {
 
 }
 
+=======
+>>>>>>> parent of bf5a749... up to the cloud
 =======
 >>>>>>> parent of bf5a749... up to the cloud
 function printEmojis (twittertext) {
