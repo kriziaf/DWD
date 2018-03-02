@@ -19,9 +19,22 @@ $('document').ready(
             let category = obj[i].entities.hashtags[0].text;
             $('#result').append('<p class="'+category+' tweets">' + obj[i].text + '</p>');
 
+<<<<<<< HEAD
+        for (var i=0;i<10;i++){
+            $('#result').append('<p>' + obj[i].text + '</p>');
+            //let tweet = obj[i].text
+            //console.log(tweet);
+=======
+>>>>>>> 14afe5a7991f67bf868995eff713892284f33c17
 
             //on click of aTag, filter emojis containing the hashtag
 
+<<<<<<< HEAD
+            // console.log(obj[1].text);
+            let aTag = $("<a></a>").append('<a>#' + obj[i].entities.hashtags[0].text + "<a>");
+            $('#hashtag').append(aTag);
+
+=======
             let aTag = $('<a>#' + category + '<a>');
             aTag.click(() => {
               filterContent(category);
@@ -36,6 +49,7 @@ $('document').ready(
           }
 
 
+>>>>>>> 14afe5a7991f67bf868995eff713892284f33c17
         }
 
 
@@ -47,6 +61,23 @@ $('document').ready(
   }
 )
 
+<<<<<<< HEAD
+function showTweet () {
+  //$( "#other" ).click(function() {
+  //$( "#target" ).click();
+  //});
+
+  //on click of aTag, filter emojis containing the hashtag
+  //hover this emoji, show obj[i].text
+  //else hide!!
+
+      let nav= obj[i].entities.hashtags[0].text;
+
+			$(nav).click(function() {
+				console.log(nav + 'has been clicked');
+
+				$('#changePic').attr('src','image/xheight.svg');
+=======
 function filterContent(target){
   $('.emoji').each(function(){
     console.log(this);
@@ -82,6 +113,7 @@ function showTweet () {
 
 				console.log(nav + 'has been clicked');
 				$('#result').append(tweet);
+>>>>>>> 14afe5a7991f67bf868995eff713892284f33c17
 
 				hideCopy();
 			});
