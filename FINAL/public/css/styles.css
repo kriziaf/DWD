@@ -47,26 +47,19 @@ li {
 }
 
 section {
-
 	background: #eee;
 	border: 1px #ccc solid;
 	width: 780px;
 	margin: 10px;
 	float: left;
-<<<<<<< HEAD
 
 }
 
 section #result {
 	margin: 20px;
-	font-family: "Courier New", Courier, monospace;
-}
-=======
->>>>>>> 14afe5a7991f67bf868995eff713892284f33c17
 
 }
 
-<<<<<<< HEAD
 section #emoji {
 	font-size: 75px;
 	margin: 20px;
@@ -75,27 +68,23 @@ section #emoji {
 aside {
 	display: flex;
   flex-flow: column wrap;
-	background: #eee;
-	border: 1px #ccc solid;
 	width: 250px;
 	/* height: 300px; */
 	float: left;
-	font-size: 40px;
+	font-size: 20px;
 	margin: 20px;
-	font-family: "Courier New", Courier, monospace;
-=======
+
+}
 section #result {
 	margin: 20px;
 }
 
->>>>>>> 14afe5a7991f67bf868995eff713892284f33c17
 
 section #emoji {
 	font-size: 75px;
 	margin: 20px;
 }
 
-<<<<<<< HEAD
 footer {
 	background: #eee;
 	border: 1px #ccc solid;
@@ -103,12 +92,11 @@ footer {
 	height: 100px;
 	margin: 10px;
 	float: left;
+}
 
-=======
 aside #hashtag {
 	font-size: 40px;
 	margin: 20px;
-
 }
 
 aside  {
@@ -117,14 +105,11 @@ aside  {
 	float: left;
 }
 
-footer {
+/* footer {
 	background: #eee;
 	border: 1px #ccc solid;
 	width: 800px;
 	height: 100px;
 	margin: 10px;
 	float: left;
->>>>>>> 14afe5a7991f67bf868995eff713892284f33c17
-
-
-}
+} */
