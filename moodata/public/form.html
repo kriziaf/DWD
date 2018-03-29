@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>YOUR DATA HERE</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <div>
+    <h3>YOUR DATA HERE</h3>
+    <p>Tracking Think-Feel-Do</p>
+
+    <form action="/formpost" method="POST">
+
+      <div>
+
+      <label for="think">Thinking</label>
+      <select name="think-rating"> <!--Supplement an id here instead of using 'text'-->
+        <option value="good">good</option>
+        <option value="bad" selected>bad</option>
+      </select>
+      <input type="text" name="think-text" value="" id="think" />
+
+      </div>
+
+      <div>
+      <label for="feel">Feeling</label>
+      <select name="feel-rating"> <!--Supplement an id here instead of using 'text'-->
+        <option value="good">good</option>
+        <option value="bad" selected>bad</option>
+        <input type="text" name="feel-text" value="" id="feel" />
+      </select>
+      </div>
+
+      <div>
+      <label for="do">Doing</label>
+      <select name="do-rating"> <!--Supplement an id here instead of using 'text'-->
+        <option value="good">good</option>
+        <option value="bad" selected>bad</option>
+      </select>
+      <input type="text" name="do-text" value="" id="do" />
+      </div>
+
+      <input type="submit"/>
+
+    </form>
+
+    </div>
+  </body>
+
+</html>
