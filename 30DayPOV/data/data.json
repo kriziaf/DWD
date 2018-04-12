@@ -1,33 +1,32 @@
-var jsonData = [
-    {
-       "name" : "Day 1",
-        "imageURL": "https://media.giphy.com/media/5qFZ7TNV2lOSsFeu2N/giphy.gif",
-        "location": "home",
-        "stepsTaken": 10,
-        "objectSeen": ["traffic", "people"],
-        "activity": ["waiting"],
-        "moodRating": 3
-    },
-    {
-        "name": "Day 2",
-        "imageURL": "https://media.giphy.com/media/YlIC2TqOFeIDvzImEm/giphy.gif",
-        "location": "train",
-        "stepsTaken": 6,
-        "objectSeen": ["seats", "coffee"],
-        "activity": ["traveling"],
-        "moodRating": 2
-    },
-    {
-        "name": "Day 3",
-        "imageURL": "https://media.giphy.com/media/3tFmaH4f9JEze84r9D/giphy.gif",
-        "location": "park",
-        "stepsTaken": 5,
-        "activity": ["walking, laughing"],
-        "objectSeen": [
-            "feet",
-            "people",
-            "trees",
-        ],
-        "moodRating": 5
-    }
+[{
+		"name": "Day 1",
+		"imageURL": "https://media.giphy.com/media/5qFZ7TNV2lOSsFeu2N/giphy.gif",
+		"location": "home",
+		"stepsTaken": 5000,
+		"objectSeen": ["traffic", "people"],
+		"activity": ["waiting"],
+		"moodRating": 3
+	},
+	{
+		"name": "Day 2",
+		"imageURL": "https://media.giphy.com/media/YlIC2TqOFeIDvzImEm/giphy.gif",
+		"location": "train",
+		"stepsTaken": 7000,
+		"objectSeen": ["seats", "coffee"],
+		"activity": ["traveling"],
+		"moodRating": 2
+	},
+	{
+		"name": "Day 3",
+		"imageURL": "https://media.giphy.com/media/3tFmaH4f9JEze84r9D/giphy.gif",
+		"location": "park",
+		"stepsTaken": 10000,
+		"activity": ["walking"],
+		"objectSeen": [
+			"feet",
+			"people",
+			"trees"
+		],
+		"moodRating": 5
+	}
 ]

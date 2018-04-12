@@ -13,7 +13,7 @@ function init(){
 	var data = {
 	    // chart labels
       //insert key for taglist
-	    labels: ["trains", "coffee", "stranger", "friend", "laughs", "trains", "coffee", "stranger", "friend", "laughs"],
+	    labels: ["trains", "coffee", "stranger", "friend", "art", "sky", "ceiling", "foliage"],
 	    // array of datasets to plot
 	    // could be only 1 if there's just 1 dataset
 	    datasets: [
@@ -23,7 +23,19 @@ function init(){
 	            borderColor: "#191F58",//rgba(75,192,192,0.5)
 	            borderWidth: 1,
               //**need frequency inserted here
-	            data: [14, 17, 10, 17, 15, 14, 17, 10, 17, 15]
+	            data: [3, 2, 1, 8, 5, 6, 4, 10, 4, 2]
+
+							// backgroundColor: [
+							// 		 pattern.draw('square', '#ff6384'),
+							// 		 pattern.draw('circle', '#36a2eb'),
+							// 		 pattern.draw('diamond', '#cc65fe'),
+							// 		 pattern.draw('triangle', '#ffce56'),
+							// 		 pattern.draw('square', '#ff6384'),
+							// 		 pattern.draw('circle', '#36a2eb'),
+							// 		 pattern.draw('diamond', '#cc65fe'),
+							// 		 pattern.draw('triangle', '#ffce56')
+							//  ]
+	 						//}],
 	        }//,
 	        // {
 	        //     label: "My Second dataset",
@@ -49,14 +61,15 @@ function init(){
 
 	// first, get the context of the canvas where we're drawing the chart
 	var ctx = document.getElementById("barChart").getContext("2d");
+	// var fillPattern = ctx.createPattern(img, 'repeat');
 
 	// now, create the bar chart, passing in:
 	// 1. the type (required)
 	// 2. the data (required)
 	// 3. chart options (optional)
 	var myBarChart = new Chart(ctx, {
-	    type: 'bar',
-	    //type: 'horizontalBar', // horizontal bards
+	    // type: 'bar',
+	    type: 'horizontalBar', // horizontal bards
 	    data: data,
 	    options: options
 	});
