@@ -20,7 +20,8 @@ body {
 }
 
 a {
-  border: 1px solid #191F58;
+
+  text-decoration: underline;
 }
 
 h1 {
@@ -82,9 +83,8 @@ canvas{
 }
 
 .videoFrame {
-    height: 100px;
-    border-radius: 100px;
-    border: 1px solid #191F58;
+    height: 90px;
+    border-radius: 120px;
     margin: 10px;
 }
 
