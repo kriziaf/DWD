@@ -63,8 +63,8 @@ function buildDoughnutChart1(){
 
 		var data = {
 				labels: [
-						"new",
-						"old"
+						"new stuff",
+						"old stuff"
 				],
 				datasets: [{
 								data: [100, 300],
