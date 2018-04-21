@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+
   <link rel="stylesheet" href="css/style.css">
   <title>Enter POV Data</title>
+  !-- Custom Font - Change 'Muli' to the font you want -->
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Miriam+Libre" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:900" rel="stylesheet">
+
+  </head>
   <body>
 
     <div class="container">
@@ -9,13 +17,14 @@
       <p>Enter todays' madeleine moment:</p>
 
     <form action="/formpost" method="POST">
-
+        <div>
         <label for="search">In Search of</label> <!--Supplement an id here instead of using 'text'-->
-        <input type="text" name="response" value="" id="searchData" />
+        <input type="text" name="response" value="" id="searchData"/>
         </div>
+
         <div>
         <label for="found">I found</label>
-          <input type="text" name="found" value="" id="foundData" />
+          <input type="text" name="response" value="" id="foundData" />
         </div>
 
         <input type="submit"/>
