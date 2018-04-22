@@ -20,7 +20,7 @@ body {
 }
 
 a {
-
+  color: #191F58;
   text-decoration: underline;
 }
 
@@ -43,9 +43,26 @@ h4 {
   font-family: 'Miriam Libre', sans-serif;
 
 }
+input[type=button], input[type=submit], input[type=reset] {
+
+    border: 1px solid #191F58;
+    background-color: #fadcca;
+    color: #191F58;
+    padding: 16px 32px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input {
+  max-width: 130%;
+  font-size: 20px;
+  margin-top: 20px;
+}
 
 canvas{
-	margin: 0 auto;
+	/* margin: 0 auto; */
+  margin-top: 10px;
   display: block;
 }
 
@@ -78,7 +95,7 @@ canvas{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin: 40px 0 40px 0;
     justify-content: left;
 }
 
