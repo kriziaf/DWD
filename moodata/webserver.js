@@ -17,7 +17,7 @@ app.post('/formpost', function (req, res) {
   var submission = req.body.response;
   // console.log("They submitted: " + submission);
   //console.log(submission)
-  console.log('In Search of ', submission[0] + 'I found 'submission[1])
+  //console.log('In Search of ' + submission[0] + 'I found ' + submission[1])
   // res.render always looks in the views folder
   // response is the name from the ejs confirmation page
   // submission is the actual data that you're sending
