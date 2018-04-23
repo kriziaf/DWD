@@ -67,7 +67,7 @@ function buildDoughnutChart1(){
 						"no"
 				],
 				datasets: [{
-								data: [6, 9],
+								data: [2, 13],
 								backgroundColor: [
 										"#fadcca",
 										"#191F58"
@@ -107,7 +107,7 @@ function buildDoughnutChart2(){
 						"no food"
 				],
 				datasets: [{
-								data: [50, 300],
+								data: [6, 9],
 								backgroundColor: [
 										"#fadcca",
 										"#191F58"
