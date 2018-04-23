@@ -21,10 +21,10 @@ function buildDoughnutChart(){
 		var data = {
 				labels: [
 						"Aha!",
-						"No Idea"
+						"Nada"
 				],
 				datasets: [{
-								data: [50, 300],
+								data: [3, 12],
 								backgroundColor: [
 										"#fadcca",
 										"#191F58"
@@ -63,11 +63,11 @@ function buildDoughnutChart1(){
 
 		var data = {
 				labels: [
-						"new stuff",
-						"old stuff"
+						"yes",
+						"no"
 				],
 				datasets: [{
-								data: [100, 300],
+								data: [6, 9],
 								backgroundColor: [
 										"#fadcca",
 										"#191F58"
@@ -149,7 +149,7 @@ function buildBarChart(){
 			var data = {
 			    // chart labels
 		      //insert key for taglist
-			    labels: ["trains", "coffee", "stranger", "friend", "art", "sky", "ceiling", "foliage"],
+			    labels: ["train", "view", "bridge", "cars", "window", "buildings", "human", "ceiling", "food", "light"],
 			    // array of datasets to plot
 			    // could be only 1 if there's just 1 dataset
 			    datasets: [{
@@ -158,7 +158,7 @@ function buildBarChart(){
 			            borderColor: "#191F58",//rgba(75,192,192,0.5)
 			            borderWidth: 1,
 		              //**need frequency inserted here
-			            data: [3, 2, 1, 8, 5, 6, 4, 10, 4, 2]
+			            data: [2, 3, 2, 2, 4, 1, 10, 3, 6, 3]
 			    }]
 			};
 
@@ -206,7 +206,7 @@ function buildLineChart(){
             pointBackgroundColor: "#fadcca",
             pointRadius: 5,
             // the data values that actually get plotted
-            data: [1, 38, 16, 13, 5, 6, 1, 35, 8, 3, 7, 1]
+            data: [1, 38, 16, 13, 5, 6, 1, 35, 8, 3, 7,1,4,6,4]
         }
         // // dataset 2
         // {
