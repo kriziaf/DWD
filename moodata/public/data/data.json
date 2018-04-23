@@ -66,10 +66,10 @@
 	{
 		"id": 7,
 		"name": "Day 8",
-		"search":"gold ring",
-		"found":"gold ceiling",
-		"imageURL": "https://media.giphy.com/media/67qZTLnb3iOZyHKHOx/giphy.gif",
-		"objectSeen": ["window", "ceiling", "light"]
+		"search":"temp goodbyes",
+		"found":"subway art",
+		"imageURL": "https://media.giphy.com/media/xUnn8wa2u7t9mAE0g3/giphy.gif",
+		"objectSeen": ["train", "art", "food"]
 	},
 	{
 		"id": 8,

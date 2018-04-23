@@ -24,7 +24,7 @@ function buildDoughnutChart(){
 						"Nada"
 				],
 				datasets: [{
-								data: [3, 12],
+								data: [4, 11],
 								backgroundColor: [
 										"#fadcca",
 										"#191F58"
@@ -40,6 +40,10 @@ function buildDoughnutChart(){
 		// see list of options:
 		// http://www.chartjs.org/docs/#doughnut-pie-chart-chart-options
 		var options = {
+			title: {
+            display: true,
+            text: 'Profound thoughts generated through activity'
+      },
 			tooltips: {
 					backgroundColor: 'black'
 			},
@@ -67,7 +71,7 @@ function buildDoughnutChart1(){
 						"no"
 				],
 				datasets: [{
-								data: [2, 13],
+								data: [3, 12],
 								backgroundColor: [
 										"#fadcca",
 										"#191F58"
@@ -80,6 +84,10 @@ function buildDoughnutChart1(){
 		};
 
 		var options = {
+			title: {
+            display: true,
+            text: 'Have I have tried this activity before'
+      },
 			tooltips: {
 					backgroundColor: 'black'
 			},
@@ -119,10 +127,11 @@ function buildDoughnutChart2(){
 						}]
 		};
 
-		// create chart options (this is optional)
-		// see list of options:
-		// http://www.chartjs.org/docs/#doughnut-pie-chart-chart-options
 		var options = {
+			title: {
+            display: true,
+            text: 'Machine reads food in the frame'
+      },
 			tooltips: {
 					backgroundColor: 'black'
 			},
@@ -149,7 +158,7 @@ function buildBarChart(){
 			var data = {
 			    // chart labels
 		      //insert key for taglist
-			    labels: ["train", "view", "bridge", "cars", "window", "buildings", "human", "ceiling", "food", "light"],
+			    labels: ["train", "view", "bridge", "cars", "window", "art", "human", "ceiling", "food", "light"],
 			    // array of datasets to plot
 			    // could be only 1 if there's just 1 dataset
 			    datasets: [{
@@ -158,14 +167,15 @@ function buildBarChart(){
 			            borderColor: "#191F58",//rgba(75,192,192,0.5)
 			            borderWidth: 1,
 		              //**need frequency inserted here
-			            data: [2, 3, 2, 2, 4, 1, 10, 3, 6, 3]
+			            data: [3, 3, 2, 2, 4, 1, 10, 3, 7, 3]
 			    }]
 			};
 
-			// create chart options (this is optional)
-			// see list of options:
-			// http://www.chartjs.org/docs/latest/charts/bar.html
 			var options = {
+						title: {
+			            display: true,
+			            text: 'How many times objects were tagged'
+			      },
 		        tooltips: {
 		            backgroundColor: '#191F58'
 		        },
@@ -221,14 +231,10 @@ function buildLineChart(){
     ]
 	};
 
-	// create chart options (this is optional)
-	// see list of options:
-	// global: http://www.chartjs.org/docs/#chart-configuration-creating-a-chart-with-options
-	// http://www.chartjs.org/docs/#line-chart-chart-options
 	var options = {
       title: {
-            display: false,
-            text: 'My Line Chart'
+            display: true,
+            text: 'Ten-second snaps taken per day'
        },
 	    tooltips: {
 	        backgroundColor: "#191F58"
