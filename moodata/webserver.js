@@ -14,14 +14,14 @@ app.use(express.static('public'));
 var submissions_array = [];
 
 app.post('/formpost', function (req, res) {
-  var submission = req.body;
+  var submission = req.body.response;
   // console.log("They submitted: " + submission);
   //console.log(submission)
-  console.log('item ', submission.response[0])
+  console.log('In Search of ', submission[0] + 'I found 'submission[1])
   // res.render always looks in the views folder
   // response is the name from the ejs confirmation page
   // submission is the actual data that you're sending
-  res.render('confirmation.ejs',{response: submission.response[0]})
+  res.render('confirmation.ejs',{response1: submission[0], response2: submission[1]})
   // save into an array
   submissions_array.push(submission);
 })
