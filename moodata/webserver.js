@@ -21,7 +21,7 @@ app.post('/formpost', function (req, res) {
   // res.render always looks in the views folder
   // response is the name from the ejs confirmation page
   // submission is the actual data that you're sending
-  //res.render('confirmation.ejs',{response: submission.response[0]})
+  res.render('confirmation.ejs',{response: submission.response[0]})
   // save into an array
   submissions_array.push(submission);
 })
