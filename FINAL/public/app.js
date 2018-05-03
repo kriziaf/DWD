@@ -10,12 +10,16 @@ $('document').ready(
       // $('#result').html('<p>' + data + '</p>')
 
       //PARSE JSON STRING
+      let category = '';
         var obj = jQuery.parseJSON(data);
           console.log(obj);
         for (var i=0;i<obj.length;i++){
           let emoji = printEmojis(obj[i].text);
           if(emoji != null){
-            let category = obj[i].entities.hashtags[0].text;
+            if(obj[i].entities.hashtags[0]){
+              console.log(obj[i].entities);
+               category =obj[i].entities.hashtags[0].text;
+            }
             $('#result').append('<p class="'+category+' tweets">' + obj[i].text + '</p>');
 
             //on click of aTag, filter emojis containing the hashtag
