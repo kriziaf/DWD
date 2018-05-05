@@ -5,7 +5,6 @@ $('document').ready(
       url:"http://104.236.222.190:3000/twitter",
       //data:{},
       success: function(data) {
-
       // DISPLAY STRING
       // $('#result').html('<p>' + data + '</p>')
 
@@ -13,6 +12,7 @@ $('document').ready(
       let category = '';
         var obj = jQuery.parseJSON(data);
           console.log(obj);
+          
         for (var i=0;i<obj.length;i++){
           let emoji = printEmojis(obj[i].text);
           if(emoji != null && obj[i].entities.hashtags.length > 0){
