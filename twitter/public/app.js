@@ -24,7 +24,7 @@ $('document').ready(
 
             // console.log(obj[1].text);
             // let aTag = $('<a>#' + category + '<a>');
-            let aTag = '<a onclick="filterContent(\''+category+'\')">' + category + '<a>';
+            let aTag = '<a onclick="filterContent(\''+category+'\')">#' + category + '<a>';
             console.log(aTag);
             // aTag.click(function() {
             //   filterContent(category);
